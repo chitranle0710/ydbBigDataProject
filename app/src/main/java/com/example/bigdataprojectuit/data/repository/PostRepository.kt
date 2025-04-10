@@ -1,7 +1,7 @@
 package com.example.bigdataprojectuit.data.repository
 
-import com.example.bigdataprojectuit.domain.model.Post
+import com.example.bigdataprojectuit.domain.model.User
 
 interface PostRepository {
-    suspend fun getPosts(): List<Post>
+    suspend fun getUsers(): List<User>
 }

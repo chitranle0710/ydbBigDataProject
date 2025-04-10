@@ -2,7 +2,7 @@ package com.example.bigdataprojectuit.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.bigdataprojectuit.domain.model.Post
+import com.example.bigdataprojectuit.domain.model.User
 import com.example.bigdataprojectuit.domain.usecase.GetPostsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -15,13 +15,14 @@ class MainViewModel @Inject constructor(
     private val getPostsUseCase: GetPostsUseCase
 ) : ViewModel() {
 
-    private val _posts = MutableStateFlow<List<Post>>(emptyList())
-    val posts: StateFlow<List<Post>> get() = _posts
+    private val _usersStateFlow = MutableStateFlow<List<User>>(emptyList())
+    val posts: StateFlow<List<User>> get() = _usersStateFlow
 
     fun fetchPosts() {
         viewModelScope.launch {
             try {
-                _posts.value = getPostsUseCase.invoke()
+                _usersStateFlow.value = getPostsUseCase.invoke()
+                println("DEBUG ------ ${getPostsUseCase.invoke()}")
             } catch (e: Exception) {
                 println("Error: ${e.message}")
             }

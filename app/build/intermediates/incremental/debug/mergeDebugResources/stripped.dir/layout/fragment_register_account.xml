@@ -15,17 +15,17 @@
             android:id="@+id/tv_register_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginbottom="40dp"
+            android:layout_marginBottom="40dp"
             android:text="Create account"
-            android:textcolor="#333333"
-            android:textsize="28sp"
-            android:textstyle="bold" />
+            android:textColor="#333333"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginbottom="20dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/bg_card"
             android:elevation="6dp"
             android:orientation="vertical"
@@ -35,10 +35,10 @@
                 android:id="@+id/et_full_name"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginbottom="16dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_input"
                 android:hint="Full name"
-                android:inputtype="textpersonname"
+                android:inputType="textPersonName"
                 android:padding="12dp" />
 
             <EditText
@@ -46,10 +46,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginbottom="16dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_input"
                 android:hint="Email"
-                android:inputtype="textemailaddress"
+                android:inputType="textEmailAddress"
                 android:padding="12dp" />
 
             <EditText
@@ -57,10 +57,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginbottom="16dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_input"
                 android:hint="Password"
-                android:inputtype="textpassword"
+                android:inputType="textPassword"
                 android:padding="12dp" />
 
             <EditText
@@ -70,7 +70,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/bg_input"
                 android:hint="Confirm password"
-                android:inputtype="textpassword"
+                android:inputType="textPassword"
                 android:padding="12dp" />
         </LinearLayout>
 
@@ -79,21 +79,21 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
-            android:layout_marginbottom="12dp"
+            android:layout_marginBottom="12dp"
             android:background="@drawable/bg_button"
-            android:backgroundtint="#6200ee"
+            android:backgroundTint="#6200ee"
             android:text="Register"
-            android:textallcaps="false"
-            android:textcolor="#ffffff" />
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/tv_login_redirect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_margintop="8dp"
+            android:layout_marginBottom="8dp"
             android:text="Already have an account? Login"
-            android:textcolor="#6200ee"
-            android:textsize="14sp" />
+            android:textColor="#6200ee"
+            android:textSize="14sp" />
     </LinearLayout>
 </ScrollView>

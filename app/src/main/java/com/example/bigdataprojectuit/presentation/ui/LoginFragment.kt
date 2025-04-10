@@ -27,8 +27,7 @@ class LoginFragment : Fragment() {
     private fun handleClick() {
         with(binding) {
             btnLogin.setOnClickListener {
-                findNavController().navigate(
-                )
+
             }
         }
     }

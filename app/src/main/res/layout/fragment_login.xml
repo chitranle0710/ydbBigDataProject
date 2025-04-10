@@ -15,17 +15,17 @@
             android:id="@+id/tv_login_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginbottom="40dp"
+            android:layout_marginBottom="40dp"
             android:text="Welcome back"
-            android:textcolor="#333333"
-            android:textsize="28sp"
-            android:textstyle="bold" />
+            android:textColor="#333333"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginbottom="20dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/bg_card"
             android:elevation="6dp"
             android:orientation="vertical"
@@ -35,10 +35,10 @@
                 android:id="@+id/et_email"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginbottom="16dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_input"
                 android:hint="Email"
-                android:inputtype="textemailaddress"
+                android:inputType="textEmailAddress"
                 android:padding="12dp" />
 
             <EditText
@@ -48,7 +48,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/bg_input"
                 android:hint="Password"
-                android:inputtype="textpassword"
+                android:inputType="textPassword"
                 android:padding="12dp" />
         </LinearLayout>
 
@@ -57,13 +57,12 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
-            android:layout_marginbottom="12dp"
+            android:layout_marginBottom="12dp"
             android:background="@drawable/bg_button"
-            android:backgroundtint="#6200ee"
-            android:fontfamily="sans-serif-medium"
+            android:backgroundTint="#6200ee"
             android:text="Login"
-            android:textallcaps="false"
-            android:textcolor="#ffffff" />
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
 
         <Button
             android:id="@+id/btn_register"
@@ -71,10 +70,9 @@
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/bg_button_outline"
-            android:fontfamily="sans-serif-medium"
             android:text="Register"
-            android:textallcaps="false"
-            android:textcolor="#6200ee" />
+            android:textAllCaps="false"
+            android:textColor="#6200ee" />
 
     </LinearLayout>
 </ScrollView>

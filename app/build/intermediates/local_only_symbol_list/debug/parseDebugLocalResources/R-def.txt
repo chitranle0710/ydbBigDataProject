@@ -10,7 +10,6 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 id action_loginFragment_to_homeFragment
 id action_loginFragment_to_registerAccountFragment
-id action_loginFragment_to_registerAccountFragment2
 id btn_login
 id btn_register
 id et_confirm_password

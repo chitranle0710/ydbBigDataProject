@@ -1,18 +1,22 @@
 [
     {
-        "merged": "com.example.bigdataprojectuit.app-mergeDebugResources-47:/layout/fragment_login.xml",
-        "source": "com.example.bigdataprojectuit.app-main-50:/layout/fragment_login.xml"
+        "merged": "/Users/macintoshhd/.gradle/daemon/8.7/com.example.bigdataprojectuit.app-mergeDebugResources-47:/layout/activity_main.xml",
+        "source": "/Users/macintoshhd/.gradle/daemon/8.7/com.example.bigdataprojectuit.app-main-50:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.bigdataprojectuit.app-mergeDebugResources-47:/layout/fragment_home.xml",
-        "source": "com.example.bigdataprojectuit.app-main-50:/layout/fragment_home.xml"
+        "merged": "/Users/macintoshhd/.gradle/daemon/8.7/com.example.bigdataprojectuit.app-mergeDebugResources-47:/layout/fragment_home.xml",
+        "source": "/Users/macintoshhd/.gradle/daemon/8.7/com.example.bigdataprojectuit.app-main-50:/layout/fragment_home.xml"
     },
     {
         "merged": "com.example.bigdataprojectuit.app-mergeDebugResources-47:/layout/fragment_register_account.xml",
         "source": "com.example.bigdataprojectuit.app-main-50:/layout/fragment_register_account.xml"
     },
     {
-        "merged": "com.example.bigdataprojectuit.app-mergeDebugResources-47:/layout/activity_main.xml",
-        "source": "com.example.bigdataprojectuit.app-main-50:/layout/activity_main.xml"
+        "merged": "/Users/macintoshhd/.gradle/daemon/8.7/com.example.bigdataprojectuit.app-mergeDebugResources-47:/layout/fragment_login.xml",
+        "source": "/Users/macintoshhd/.gradle/daemon/8.7/com.example.bigdataprojectuit.app-main-50:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "/Users/macintoshhd/.gradle/daemon/8.7/com.example.bigdataprojectuit.app-mergeDebugResources-47:/layout/fragment_register_account.xml",
+        "source": "/Users/macintoshhd/.gradle/daemon/8.7/com.example.bigdataprojectuit.app-main-50:/layout/fragment_register_account.xml"
     }
 ]

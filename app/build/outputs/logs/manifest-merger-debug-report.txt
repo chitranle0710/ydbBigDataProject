@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:2:1-29:12
+ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:2:1-30:12
 MERGED from [androidx.databinding:viewbinding:8.5.2] /Users/macintoshhd/.gradle/caches/transforms-4/9a6a9204dbe906b19619ac70166af0fb/transformed/viewbinding-8.5.2/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.7.6] /Users/macintoshhd/.gradle/caches/transforms-4/e8fb7a2b37a88dc8ae7d29ba4ab77499/transformed/navigation-common-2.7.6/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.6] /Users/macintoshhd/.gradle/caches/transforms-4/1c99a6ec495b77c8e60aa72a3a5793d4/transformed/navigation-common-ktx-2.7.6/AndroidManifest.xml:2:1-7:12
@@ -79,8 +79,8 @@ ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml
 	android:name
 		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:7:5-27:19
-INJECTED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:7:5-27:19
+ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:7:5-28:19
+INJECTED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:7:5-28:19
 MERGED from [com.google.android.material:material:1.12.0] /Users/macintoshhd/.gradle/caches/transforms-4/b5358c96d1c1a41af5270ccd2f6e279f/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /Users/macintoshhd/.gradle/caches/transforms-4/b5358c96d1c1a41af5270ccd2f6e279f/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /Users/macintoshhd/.gradle/caches/transforms-4/2a21ec9b46440767f875d7e61d3b3603/transformed/constraintlayout-2.2.0/AndroidManifest.xml:7:5-20
@@ -104,41 +104,43 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/maci
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.15.0] /Users/macintoshhd/.gradle/caches/transforms-4/e4bbc9f1c86910cc3ccb8cc025cf084d/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:13:9-41
+		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:14:9-41
 	android:fullBackupContent
 		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:11:9-54
 	android:roundIcon
-		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:14:9-54
+		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:15:9-54
 	tools:targetApi
-		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:17:9-29
+		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:18:9-29
 	android:icon
 		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:12:9-43
 	android:allowBackup
 		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:16:9-55
+		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:17:9-55
 	android:dataExtractionRules
 		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:10:9-65
+	android:usesCleartextTraffic
+		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:13:9-44
 	android:name
 		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:8:9-38
 activity#com.example.bigdataprojectuit.MainActivity
-ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:18:9-26:20
+ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:19:9-27:20
 	android:exported
-		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:20:13-36
+		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:21:13-36
 	android:name
-		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:19:13-41
+		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:20:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:21:13-25:29
+ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:22:17-69
+ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:22:25-66
+		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:24:17-77
+ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:24:27-74
+		ADDED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml:25:27-74
 uses-sdk
 INJECTED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/macintoshhd/ydbBigDataProject/app/src/main/AndroidManifest.xml
