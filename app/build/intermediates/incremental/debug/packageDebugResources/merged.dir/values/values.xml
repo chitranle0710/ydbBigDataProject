@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">BigDataProjectUit</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_fragment">Login Fragment</string>
+    <style name="Base.Theme.BigDataProjectUit" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.BigDataProjectUit" parent="Base.Theme.BigDataProjectUit"/>
+</resources>

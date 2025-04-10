@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.bigdataprojectuit.app-mergeDebugResources-46:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/macintoshhd/.gradle/caches/transforms-4/d69c359a004f2a3a79541d10e7cd71fc/transformed/appcompat-1.7.0/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}
