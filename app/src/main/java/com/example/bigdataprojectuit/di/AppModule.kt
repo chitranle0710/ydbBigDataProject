@@ -3,7 +3,7 @@ package com.example.bigdataprojectuit.di
 import com.example.bigdataprojectuit.data.remote.ApiService
 import com.example.bigdataprojectuit.data.repository.PostRepository
 import com.example.bigdataprojectuit.data.repository.PostRepositoryImpl
-import com.example.bigdataprojectuit.domain.usecase.GetPostsUseCase
+import com.example.bigdataprojectuit.domain.usecase.GetUsersListUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -40,7 +40,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideGetPostsUseCase(repository: PostRepository): GetPostsUseCase {
-        return GetPostsUseCase(repository)
+    fun provideGetPostsUseCase(repository: PostRepository): GetUsersListUseCase {
+        return GetUsersListUseCase(repository)
     }
 }

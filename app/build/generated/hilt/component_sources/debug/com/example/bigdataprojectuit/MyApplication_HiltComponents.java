@@ -1,7 +1,9 @@
 package com.example.bigdataprojectuit;
 
 import com.example.bigdataprojectuit.di.AppModule;
+import com.example.bigdataprojectuit.presentation.ui.RegisterAccountFragment_GeneratedInjector;
 import com.example.bigdataprojectuit.presentation.viewmodel.MainViewModel_HiltModules;
+import com.example.bigdataprojectuit.presentation.viewmodel.RegisterAccountViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
 import dagger.Module;
@@ -146,7 +148,8 @@ public final class MyApplication_HiltComponents {
           HiltWrapper_ActivityRetainedComponentManager_LifecycleModule.class,
           MainViewModel_HiltModules.KeyModule.class,
           ActivityCBuilderModule.class,
-          ViewModelCBuilderModule.class
+          ViewModelCBuilderModule.class,
+          RegisterAccountViewModel_HiltModules.KeyModule.class
       }
   )
   @ActivityRetainedScoped
@@ -183,7 +186,8 @@ public final class MyApplication_HiltComponents {
   @Subcomponent(
       modules = {
           HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
-          MainViewModel_HiltModules.BindsModule.class
+          MainViewModel_HiltModules.BindsModule.class,
+          RegisterAccountViewModel_HiltModules.BindsModule.class
       }
   )
   @ViewModelScoped
@@ -208,7 +212,8 @@ public final class MyApplication_HiltComponents {
       modules = ViewWithFragmentCBuilderModule.class
   )
   @FragmentScoped
-  public abstract static class FragmentC implements FragmentComponent,
+  public abstract static class FragmentC implements RegisterAccountFragment_GeneratedInjector,
+      FragmentComponent,
       DefaultViewModelFactories.FragmentEntryPoint,
       ViewComponentManager.ViewWithFragmentComponentBuilderEntryPoint,
       GeneratedComponent {

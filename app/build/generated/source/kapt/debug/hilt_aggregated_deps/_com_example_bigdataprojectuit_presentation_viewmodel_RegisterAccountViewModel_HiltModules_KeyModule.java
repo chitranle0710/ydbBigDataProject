@@ -1,0 +1,13 @@
+package hilt_aggregated_deps;
+
+import dagger.hilt.processor.internal.aggregateddeps.AggregatedDeps;
+
+/**
+ * This class should only be referenced by generated code! This class aggregates information across multiple compilations.
+ */
+@AggregatedDeps(
+    components = "dagger.hilt.android.components.ActivityRetainedComponent",
+    modules = "com.example.bigdataprojectuit.presentation.viewmodel.RegisterAccountViewModel_HiltModules.KeyModule"
+)
+public class _com_example_bigdataprojectuit_presentation_viewmodel_RegisterAccountViewModel_HiltModules_KeyModule {
+}

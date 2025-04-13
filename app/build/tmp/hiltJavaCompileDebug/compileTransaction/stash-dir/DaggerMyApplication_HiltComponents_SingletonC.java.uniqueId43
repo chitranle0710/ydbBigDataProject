@@ -14,9 +14,13 @@ import com.example.bigdataprojectuit.di.AppModule_ProvideApiServiceFactory;
 import com.example.bigdataprojectuit.di.AppModule_ProvideGetPostsUseCaseFactory;
 import com.example.bigdataprojectuit.di.AppModule_ProvidePostRepositoryFactory;
 import com.example.bigdataprojectuit.di.AppModule_ProvideRetrofitFactory;
-import com.example.bigdataprojectuit.domain.usecase.GetPostsUseCase;
+import com.example.bigdataprojectuit.domain.usecase.GetUsersListUseCase;
+import com.example.bigdataprojectuit.domain.usecase.RegisterUserUseCase;
+import com.example.bigdataprojectuit.presentation.ui.RegisterAccountFragment;
 import com.example.bigdataprojectuit.presentation.viewmodel.MainViewModel;
 import com.example.bigdataprojectuit.presentation.viewmodel.MainViewModel_HiltModules_KeyModule_ProvideFactory;
+import com.example.bigdataprojectuit.presentation.viewmodel.RegisterAccountViewModel;
+import com.example.bigdataprojectuit.presentation.viewmodel.RegisterAccountViewModel_HiltModules_KeyModule_ProvideFactory;
 import dagger.hilt.android.ActivityRetainedLifecycle;
 import dagger.hilt.android.ViewModelLifecycle;
 import dagger.hilt.android.flags.HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule;
@@ -33,7 +37,9 @@ import dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_Li
 import dagger.hilt.android.internal.modules.ApplicationContextModule;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.DoubleCheck;
+import dagger.internal.MapBuilder;
 import dagger.internal.Preconditions;
+import dagger.internal.SetBuilder;
 import java.util.Collections;
 import java.util.Map;
 import java.util.Set;
@@ -326,6 +332,10 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
     }
 
     @Override
+    public void injectRegisterAccountFragment(RegisterAccountFragment arg0) {
+    }
+
+    @Override
     public DefaultViewModelFactories.InternalFactoryFactory getHiltInternalFactoryFactory() {
       return activityCImpl.getHiltInternalFactoryFactory();
     }
@@ -381,7 +391,7 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
 
     @Override
     public Set<String> getViewModelKeys() {
-      return Collections.<String>singleton(MainViewModel_HiltModules_KeyModule_ProvideFactory.provide());
+      return SetBuilder.<String>newSetBuilder(2).add(MainViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(RegisterAccountViewModel_HiltModules_KeyModule_ProvideFactory.provide()).build();
     }
 
     @Override
@@ -409,6 +419,8 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
 
     private Provider<MainViewModel> mainViewModelProvider;
 
+    private Provider<RegisterAccountViewModel> registerAccountViewModelProvider;
+
     private ViewModelCImpl(SingletonCImpl singletonCImpl,
         ActivityRetainedCImpl activityRetainedCImpl, SavedStateHandle savedStateHandleParam,
         ViewModelLifecycle viewModelLifecycleParam) {
@@ -419,15 +431,20 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
 
     }
 
+    private RegisterUserUseCase registerUserUseCase() {
+      return new RegisterUserUseCase(singletonCImpl.providePostRepositoryProvider.get());
+    }
+
     @SuppressWarnings("unchecked")
     private void initialize(final SavedStateHandle savedStateHandleParam,
         final ViewModelLifecycle viewModelLifecycleParam) {
       this.mainViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 0);
+      this.registerAccountViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 1);
     }
 
     @Override
     public Map<String, Provider<ViewModel>> getHiltViewModelMap() {
-      return Collections.<String, Provider<ViewModel>>singletonMap("com.example.bigdataprojectuit.presentation.viewmodel.MainViewModel", ((Provider) mainViewModelProvider));
+      return MapBuilder.<String, Provider<ViewModel>>newMapBuilder(2).put("com.example.bigdataprojectuit.presentation.viewmodel.MainViewModel", ((Provider) mainViewModelProvider)).put("com.example.bigdataprojectuit.presentation.viewmodel.RegisterAccountViewModel", ((Provider) registerAccountViewModelProvider)).build();
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -453,6 +470,9 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
         switch (id) {
           case 0: // com.example.bigdataprojectuit.presentation.viewmodel.MainViewModel 
           return (T) new MainViewModel(singletonCImpl.provideGetPostsUseCaseProvider.get());
+
+          case 1: // com.example.bigdataprojectuit.presentation.viewmodel.RegisterAccountViewModel 
+          return (T) new RegisterAccountViewModel(viewModelCImpl.registerUserUseCase());
 
           default: throw new AssertionError(id);
         }
@@ -537,7 +557,7 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
 
     private Provider<PostRepository> providePostRepositoryProvider;
 
-    private Provider<GetPostsUseCase> provideGetPostsUseCaseProvider;
+    private Provider<GetUsersListUseCase> provideGetPostsUseCaseProvider;
 
     private SingletonCImpl() {
 
@@ -550,7 +570,7 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
       this.provideRetrofitProvider = DoubleCheck.provider(new SwitchingProvider<Retrofit>(singletonCImpl, 3));
       this.provideApiServiceProvider = DoubleCheck.provider(new SwitchingProvider<ApiService>(singletonCImpl, 2));
       this.providePostRepositoryProvider = DoubleCheck.provider(new SwitchingProvider<PostRepository>(singletonCImpl, 1));
-      this.provideGetPostsUseCaseProvider = DoubleCheck.provider(new SwitchingProvider<GetPostsUseCase>(singletonCImpl, 0));
+      this.provideGetPostsUseCaseProvider = DoubleCheck.provider(new SwitchingProvider<GetUsersListUseCase>(singletonCImpl, 0));
     }
 
     @Override
@@ -586,7 +606,7 @@ public final class DaggerMyApplication_HiltComponents_SingletonC {
       @Override
       public T get() {
         switch (id) {
-          case 0: // com.example.bigdataprojectuit.domain.usecase.GetPostsUseCase 
+          case 0: // com.example.bigdataprojectuit.domain.usecase.GetUsersListUseCase 
           return (T) AppModule_ProvideGetPostsUseCaseFactory.provideGetPostsUseCase(singletonCImpl.providePostRepositoryProvider.get());
 
           case 1: // com.example.bigdataprojectuit.data.repository.PostRepository 

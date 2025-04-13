@@ -3,7 +3,7 @@ package com.example.bigdataprojectuit.presentation.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.bigdataprojectuit.domain.model.User
-import com.example.bigdataprojectuit.domain.usecase.GetPostsUseCase
+import com.example.bigdataprojectuit.domain.usecase.GetUsersListUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -12,7 +12,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class MainViewModel @Inject constructor(
-    private val getPostsUseCase: GetPostsUseCase
+    private val getUsersListUseCase: GetUsersListUseCase
 ) : ViewModel() {
 
     private val _usersStateFlow = MutableStateFlow<List<User>>(emptyList())
@@ -21,8 +21,8 @@ class MainViewModel @Inject constructor(
     fun fetchPosts() {
         viewModelScope.launch {
             try {
-                _usersStateFlow.value = getPostsUseCase.invoke()
-                println("DEBUG ------ ${getPostsUseCase.invoke()}")
+                _usersStateFlow.value = getUsersListUseCase.invoke()
+                println("DEBUG ------ ${getUsersListUseCase.invoke()}")
             } catch (e: Exception) {
                 println("Error: ${e.message}")
             }

@@ -2,7 +2,7 @@
 package com.example.bigdataprojectuit.di;
 
 import com.example.bigdataprojectuit.data.repository.PostRepository;
-import com.example.bigdataprojectuit.domain.usecase.GetPostsUseCase;
+import com.example.bigdataprojectuit.domain.usecase.GetUsersListUseCase;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
 import dagger.internal.Preconditions;
@@ -19,7 +19,7 @@ import javax.inject.Provider;
     "KotlinInternal",
     "KotlinInternalInJava"
 })
-public final class AppModule_ProvideGetPostsUseCaseFactory implements Factory<GetPostsUseCase> {
+public final class AppModule_ProvideGetPostsUseCaseFactory implements Factory<GetUsersListUseCase> {
   private final Provider<PostRepository> repositoryProvider;
 
   public AppModule_ProvideGetPostsUseCaseFactory(Provider<PostRepository> repositoryProvider) {
@@ -27,7 +27,7 @@ public final class AppModule_ProvideGetPostsUseCaseFactory implements Factory<Ge
   }
 
   @Override
-  public GetPostsUseCase get() {
+  public GetUsersListUseCase get() {
     return provideGetPostsUseCase(repositoryProvider.get());
   }
 
@@ -36,7 +36,7 @@ public final class AppModule_ProvideGetPostsUseCaseFactory implements Factory<Ge
     return new AppModule_ProvideGetPostsUseCaseFactory(repositoryProvider);
   }
 
-  public static GetPostsUseCase provideGetPostsUseCase(PostRepository repository) {
+  public static GetUsersListUseCase provideGetPostsUseCase(PostRepository repository) {
     return Preconditions.checkNotNullFromProvides(AppModule.INSTANCE.provideGetPostsUseCase(repository));
   }
 }
