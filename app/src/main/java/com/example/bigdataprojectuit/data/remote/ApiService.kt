@@ -1,5 +1,6 @@
 package com.example.bigdataprojectuit.data.remote
 
+import com.example.bigdataprojectuit.data.remote.dto.LoginRequest
 import com.example.bigdataprojectuit.data.remote.dto.RegisterResponseDto
 import com.example.bigdataprojectuit.data.remote.dto.RegisterUserRequestDto
 import com.example.bigdataprojectuit.data.remote.dto.UserDto
@@ -14,5 +15,11 @@ interface ApiService {
     @POST("adduser")
     suspend fun addUsers(
         @Body register: RegisterUserRequestDto
+    ): RegisterResponseDto
+
+
+    @POST("login")
+    suspend fun login(
+        @Body requestLogin: LoginRequest
     ): RegisterResponseDto
 }

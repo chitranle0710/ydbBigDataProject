@@ -1,6 +1,7 @@
 package com.example.bigdataprojectuit.data.repository
 
 import com.example.bigdataprojectuit.data.remote.ApiService
+import com.example.bigdataprojectuit.data.remote.dto.LoginRequest
 import com.example.bigdataprojectuit.data.remote.dto.RegisterUserRequestDto
 import com.example.bigdataprojectuit.data.remote.dto.toDomain
 import com.example.bigdataprojectuit.domain.model.User
@@ -12,6 +13,11 @@ class PostRepositoryImpl(private val apiService: ApiService) : PostRepository {
 
     override suspend fun addUser(request: RegisterUserRequestDto): User? {
         val modelResponse = apiService.addUsers(register = request)
+        return modelResponse.user?.toDomain()
+    }
+
+    override suspend fun loginUser(request: LoginRequest): User? {
+        val modelResponse = apiService.login(requestLogin = request)
         return modelResponse.user?.toDomain()
     }
 }

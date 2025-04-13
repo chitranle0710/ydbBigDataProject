@@ -5,20 +5,20 @@ import com.google.gson.annotations.SerializedName
 
 data class UserDto(
     @SerializedName("id")
-    val id: String,
+    val id: String? = null,
     @SerializedName("name")
-    val name: String,
+    val name: String? = null,
     @SerializedName("username")
-    val username: String,
+    val username: String? = null,
     @SerializedName("password")
-    val password: String
+    val password: String? = null
 )
 
 fun UserDto.toDomain(): User {
     return User(
-        id = id,
-        name = name,
-        username = username,
-        password = password
+        id = id ?: "",
+        name = name ?: "",
+        username = username ?: "",
+        password = password ?: ""
     )
 }
