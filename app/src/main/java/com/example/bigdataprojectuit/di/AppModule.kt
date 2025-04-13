@@ -1,9 +1,12 @@
 package com.example.bigdataprojectuit.di
 
 import com.example.bigdataprojectuit.data.remote.ApiService
+import com.example.bigdataprojectuit.data.remote.dto.Neo4jId
+import com.example.bigdataprojectuit.data.remote.dto.Neo4jIdDeserializer
 import com.example.bigdataprojectuit.data.repository.PostRepository
 import com.example.bigdataprojectuit.data.repository.PostRepositoryImpl
 import com.example.bigdataprojectuit.domain.usecase.GetUsersListUseCase
+import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -20,9 +23,12 @@ object AppModule {
     @Provides
     @Singleton
     fun provideRetrofit(): Retrofit {
+        val gson = GsonBuilder()
+            .registerTypeAdapter(Neo4jId::class.java, Neo4jIdDeserializer())
+            .create()
         return Retrofit.Builder()
-            .baseUrl("http://10.0.2.2:3000/")
-            .addConverterFactory(GsonConverterFactory.create())
+            .baseUrl("http://10.0.2.2:3000")
+            .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
     }
 

@@ -3540,6 +3540,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerView
 id registerAccountFragment
 id report_drawn
 id reverseSawtooth
@@ -3662,6 +3663,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvName
+id tvUsername
 id tv_login_redirect
 id tv_login_title
 id tv_register_title
@@ -3826,6 +3829,7 @@ layout fragment_login
 layout fragment_register_account
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_user
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

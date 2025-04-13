@@ -3539,6 +3539,7 @@ int id progress_horizontal 0x7f080179
 int id radio 0x7f08017a
 int id ratio 0x7f08017b
 int id rectangles 0x7f08017c
+int id recyclerView 0x7f080212
 int id registerAccountFragment 0x7f08017d
 int id report_drawn 0x7f08017e
 int id reverseSawtooth 0x7f08017f
@@ -3661,6 +3662,8 @@ int id transition_position 0x7f0801f3
 int id transition_scene_layoutid_cache 0x7f0801f4
 int id transition_transform 0x7f0801f5
 int id triangle 0x7f0801f6
+int id tvName 0x7f080213
+int id tvUsername 0x7f080214
 int id tv_login_redirect 0x7f0801f7
 int id tv_login_title 0x7f0801f8
 int id tv_register_title 0x7f0801f9
@@ -3825,6 +3828,7 @@ int layout fragment_login 0x7f0b002e
 int layout fragment_register_account 0x7f0b002f
 int layout ime_base_split_test_activity 0x7f0b0030
 int layout ime_secondary_split_test_activity 0x7f0b0031
+int layout item_user 0x7f0b006f
 int layout m3_alert_dialog 0x7f0b0032
 int layout m3_alert_dialog_actions 0x7f0b0033
 int layout m3_alert_dialog_title 0x7f0b0034

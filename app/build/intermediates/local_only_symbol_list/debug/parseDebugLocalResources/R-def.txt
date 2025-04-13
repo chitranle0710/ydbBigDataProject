@@ -21,7 +21,10 @@ id loginFragment
 id main
 id nav_graph
 id nav_host_fragment
+id recyclerView
 id registerAccountFragment
+id tvName
+id tvUsername
 id tv_login_redirect
 id tv_login_title
 id tv_register_title
@@ -29,6 +32,7 @@ layout activity_main
 layout fragment_home
 layout fragment_login
 layout fragment_register_account
+layout item_user
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph

@@ -1,8 +1,10 @@
 package com.example.bigdataprojectuit;
 
 import com.example.bigdataprojectuit.di.AppModule;
+import com.example.bigdataprojectuit.presentation.ui.HomeFragment_GeneratedInjector;
 import com.example.bigdataprojectuit.presentation.ui.LoginFragment_GeneratedInjector;
 import com.example.bigdataprojectuit.presentation.ui.RegisterAccountFragment_GeneratedInjector;
+import com.example.bigdataprojectuit.presentation.viewmodel.HomeViewModel_HiltModules;
 import com.example.bigdataprojectuit.presentation.viewmodel.LoginViewModel_HiltModules;
 import com.example.bigdataprojectuit.presentation.viewmodel.MainViewModel_HiltModules;
 import com.example.bigdataprojectuit.presentation.viewmodel.RegisterAccountViewModel_HiltModules;
@@ -148,6 +150,7 @@ public final class MyApplication_HiltComponents {
   @Subcomponent(
       modules = {
           HiltWrapper_ActivityRetainedComponentManager_LifecycleModule.class,
+          HomeViewModel_HiltModules.KeyModule.class,
           LoginViewModel_HiltModules.KeyModule.class,
           MainViewModel_HiltModules.KeyModule.class,
           ActivityCBuilderModule.class,
@@ -189,6 +192,7 @@ public final class MyApplication_HiltComponents {
   @Subcomponent(
       modules = {
           HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
+          HomeViewModel_HiltModules.BindsModule.class,
           LoginViewModel_HiltModules.BindsModule.class,
           MainViewModel_HiltModules.BindsModule.class,
           RegisterAccountViewModel_HiltModules.BindsModule.class
@@ -216,7 +220,8 @@ public final class MyApplication_HiltComponents {
       modules = ViewWithFragmentCBuilderModule.class
   )
   @FragmentScoped
-  public abstract static class FragmentC implements LoginFragment_GeneratedInjector,
+  public abstract static class FragmentC implements HomeFragment_GeneratedInjector,
+      LoginFragment_GeneratedInjector,
       RegisterAccountFragment_GeneratedInjector,
       FragmentComponent,
       DefaultViewModelFactories.FragmentEntryPoint,

@@ -28,6 +28,10 @@
         "source": "/Users/macintoshhd/.gradle/daemon/8.7/com.example.bigdataprojectuit.app-main-50:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.bigdataprojectuit.app-debug-48:/layout_fragment_home.xml.flat",
+        "source": "com.example.bigdataprojectuit.app-main-50:/layout/fragment_home.xml"
+    },
+    {
         "merged": "/Users/macintoshhd/.gradle/daemon/8.7/com.example.bigdataprojectuit.app-debug-48:/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "/Users/macintoshhd/.gradle/daemon/8.7/com.example.bigdataprojectuit.app-main-50:/mipmap-hdpi/ic_launcher_round.webp"
     },
@@ -60,8 +64,8 @@
         "source": "/Users/macintoshhd/.gradle/daemon/8.7/com.example.bigdataprojectuit.app-main-50:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.example.bigdataprojectuit.app-debug-48:/layout_fragment_register_account.xml.flat",
-        "source": "com.example.bigdataprojectuit.app-main-50:/layout/fragment_register_account.xml"
+        "merged": "com.example.bigdataprojectuit.app-debug-48:/layout_item_user.xml.flat",
+        "source": "com.example.bigdataprojectuit.app-main-50:/layout/item_user.xml"
     },
     {
         "merged": "/Users/macintoshhd/.gradle/daemon/8.7/com.example.bigdataprojectuit.app-debug-48:/mipmap-mdpi_ic_launcher_round.webp.flat",
